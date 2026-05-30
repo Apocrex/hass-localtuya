@@ -425,17 +425,14 @@ SELECTS: dict[str, tuple[LocalTuyaEntity, ...]] = {
     # https://developer.tuya.com/en/docs/iot/f?id=Kakg309qkmuit
     "msp": (
         LocalTuyaEntity(
-            id=DPCode.LEVEL,
-            name="Doorbell song",
-            icon="mdi:thermometer-lines",
+            id=DPCode.WORK_MODE,
+            name="Work Mode",
+            icon="mdi:cog",
+            entity_category=EntityCategory.CONFIG,
             custom_configs=localtuya_selector(
                 {
-                    "red": "Red",
-                    "greed": "Green",
-                    "blue": "Blue",
-                    "yellow": "Yellow",
-                    "purple": "Purple",
-                    "white": "White",
+                    "auto_clean": "Auto Clean",
+                    "manual_clean": "Manual Clean",
                 }
             ),
         ),

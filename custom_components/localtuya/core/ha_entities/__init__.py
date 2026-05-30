@@ -49,6 +49,7 @@ from .switches import SWITCHES
 from .vacuums import VACUUMS
 from .locks import LOCKS
 from .water_heaters import WATER_HEATERS
+from .cat_litter_boxes import CAT_LITTER_BOXES
 
 # The supported PLATFORMS [ Platform: Data ]
 DATA_PLATFORMS = {
@@ -67,6 +68,7 @@ DATA_PLATFORMS = {
     Platform.SENSOR: SENSORS,
     Platform.SIREN: SIRENS,
     Platform.SWITCH: SWITCHES,
+    Platform.LAWN_MOWER: CAT_LITTER_BOXES,
     Platform.VACUUM: VACUUMS,
     Platform.WATER_HEATER: WATER_HEATERS,
 }

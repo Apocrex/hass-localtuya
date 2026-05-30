@@ -37,6 +37,7 @@ PLATFORMS = {
     "Sensor": Platform.SENSOR,
     "Siren": Platform.SIREN,
     "Switch": Platform.SWITCH,
+    "Cat Litter Box": Platform.LAWN_MOWER,
     "Vacuum": Platform.VACUUM,
     "Water Heater": Platform.WATER_HEATER,
 }

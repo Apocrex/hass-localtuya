@@ -1766,11 +1766,14 @@ SENSORS: dict[str, tuple[LocalTuyaEntity, ...]] = {
         LocalTuyaEntity(
             id=DPCode.EXCRETION_TIMES_DAY,
             name="Excretion times",
+            state_class=SensorStateClass.MEASUREMENT,
             custom_configs=localtuya_sensor("times"),
         ),
         LocalTuyaEntity(
             id=DPCode.EXCRETION_TIME_DAY,
             name="Excretion duration",
+            state_class=SensorStateClass.MEASUREMENT,
+            custom_configs=localtuya_sensor(UnitOfTime.SECONDS),
         ),
         LocalTuyaEntity(
             id=DPCode.COLD_TEMP_CURRENT,
